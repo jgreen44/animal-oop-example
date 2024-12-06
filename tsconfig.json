@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                        // Target modern JavaScript (ES6 or higher)
+    "module": "commonjs",                   // Use CommonJS for Node.js compatibility
+    "outDir": "./dist",                     // Output compiled files to the 'dist' folder
+    "rootDir": "./src",                     // Treat 'src' as the root directory
+    "strict": true,                         // Enable strict type-checking
+    "esModuleInterop": true,                // Allow interoperability with ES Modules
+    "sourceMap": true,                      // Generate source maps for debugging
+    "declaration": true,                    // Generate .d.ts files for TypeScript definitions
+    "resolveJsonModule": true,              // Allow importing JSON files
+    "baseUrl": "./src",                     // Base URL for imports (relative to src)
+    "paths": {                              // Configure path aliases for cleaner imports
+      "@types/*": ["types/*"],
+      "@patterns/*": ["patterns/*"],
+      "@patterns/creational/*": ["patterns/creational/*"] // Optional, for deeper specificity
+    }
+  },
+  "include": ["src/**/*"],                  // Include all TypeScript files in src
+  "exclude": ["node_modules", "dist"]       // Exclude node_modules and dist from compilation
+}

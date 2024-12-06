@@ -1,0 +1,21 @@
+{
+  "name": "animal-oop-example",
+  "version": "1.0.0",
+  "description": "An example demonstrating OOP principles in TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node -r tsconfig-paths/register dist/index.js",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "dev": "npm run clean && npm run build && npm start"
+  },
+  "dependencies": {
+    "prettier": "^3.4.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}
